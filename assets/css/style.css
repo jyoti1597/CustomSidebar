@@ -35,3 +35,59 @@
     padding: 0;
     margin: 0;
 }
+.dashboardBody{
+    display: flex;
+    justify-content: center;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: var(--z-fixed);
+    margin: .75rem;
+}
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: var(--header--height);
+    background-color: var(--body-color);
+    box-shadow:  0 2px 24px  var(--shadow-color);
+}
+
+.headerLogo {
+    display: flex;
+    justify-content: space-between;
+}
+.headerToggle{
+    display:none;
+}
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: var(--z-fixed);
+    width: 288px;
+    background-color: var(--body-color);
+    box-shadow:  0 2px 24px  var(--shadow-color);
+    transition: left .4s , background-color .4s, width .4s;
+}
+.sidebarContainer .sidebarContent{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+.userSection img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.userSection {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
