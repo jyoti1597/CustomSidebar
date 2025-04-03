@@ -34,17 +34,17 @@
     font-family: var(--body-font);
 }
 .header{
-    position: fixed;
-    top: 0;
-    z-index: var(--z-fixed);
-    margin: .75rem;
+    /* position: fixed; */
+    /* top: 0; */
+    /* z-index: var(--z-fixed); */
+    /* margin: .75rem; */
     /* left: 0; */
-    right: 0;
-    width: 80%;
+    /* right: 0; */
+    /* width: 100%; */
 }
 .headerContainer {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
     width: 100%;
     height: var(--header--height);
     background-color: var(--body-color);
@@ -74,11 +74,11 @@
     /* display:none; */
 }
 .sidebar{
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    z-index: var(--z-fixed);
+    /* position: fixed; */
+    /* left: 0; */
+    /* top: 0; */
+    /* bottom: 0; */
+    /* z-index: var(--z-fixed); */
     width: 275px;
     background-color: var(--body-color);
     box-shadow:  0 2px 24px  var(--shadow-color);
@@ -176,4 +176,10 @@ a.active::after {
     width: 3px;
     height: 20px;
     background-color: var(--first-color);
+}
+body.dashboardBody {
+    background-color: var(--body-color);
+}
+.mainContainer{
+    
 }
